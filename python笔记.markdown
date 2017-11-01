@@ -36,3 +36,24 @@ full_name = first_name + " " + last_name
 
 print (full_name)
 ```
+####使用制表符或换行符来添加空白
+- 要在字符串中添加制表符，可使用字符组合\t
+- 要在字符串中添加换行符，可使用字符组合\n
+- 还可以在同一个字符串中同时包含制表符和换行符
+####删除空白
+Python能够找出字符串开头和末尾多余的空白。要确保字符串末尾没有空白，可以使用rstrip()方法。但是这种方法删除只是暂时的，如果要永久性的删除字符串中的这个空白必须将删除操作的结构存回到变量中。
+```
+>>>favorite_language = 'python '
+>>>favorite_language = favorite_language.rstrip()
+'python'
+```
+Python还可以删除字符串开头的空白或同时剔除字符串两端的空白，可以使用lstrip()和strip()方法
+```
+>>>favorite_language = ' python '
+>>>favorite_language = favorite_language.rstrip()
+' python'
+>>>favorite_language = favorite_language.lstrip()
+'python '
+>>>favorite_language = favorite_language.strip()
+'python'
+```
